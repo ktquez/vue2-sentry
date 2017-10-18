@@ -63,7 +63,7 @@ For example, in any Vue component
     mounted () {
       this.$raven.setUserContext({
         email: 'bar@example.com',
-        id: 15
+        id: '15'
       })
     }
   }
