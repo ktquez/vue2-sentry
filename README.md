@@ -73,6 +73,13 @@ For example, in any Vue component
 
 For more information on how to make the most of Sentry contexts, just go to this link [Context with Sentry](https://docs.sentry.io/learn/context/)
 
+## Server-side rendering
+Vue2-sentry is supported in projects with server-side rendering, both in manual deployments and using other structures.
+
+If you are using [Nuxt.js](https://nuxtjs.org/), you can opt for this [nuxt-community/sentry-module](https://github.com/nuxt-community/sentry-module).
+
+If you want to use vue2-sentry, just follow the plugins installation tutorial in the Nuxt.js documentation, through [this link](https://nuxtjs.org/guide/plugins/)
+
 
 ## Contributing
 - Check the open issues or open a new issue to start a discussion around your feature idea or the bug you found.
