@@ -22,15 +22,15 @@ export default {
   ],
   targets: [
     {
-      dest: 'dist/vue-sentry.cjs.js',
+      dest: 'dist/vue2-sentry.cjs.js',
       format: 'cjs'
     },
     {
-      dest: 'dist/vue-sentry.es.js',
+      dest: 'dist/vue2-sentry.es.js',
       format: 'es'
     },
     {
-      dest: 'dist/vue-sentry.amd.js',
+      dest: 'dist/vue2-sentry.amd.js',
       format: 'amd'
     }
   ]
