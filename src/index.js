@@ -4,12 +4,11 @@ import RavenVue from 'raven-js/plugins/vue'
 export default function VueSentry (Vue, options) {
 
   const _options = {
-    enable: true,
-    config: {}
+    enable: true
   }
 
   if (options) {
-    Vue.util.extend(_options, options)
+    object = {..._options, ...options}
   }
 
   if (!options.enable) return
