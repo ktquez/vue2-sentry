@@ -21,7 +21,7 @@ import App from './App.vue'
 import VueSentry from 'vue2-sentry'
 
 Vue.use(VueSentry, {
-  protocol: 'https', // optional: default is https
+  protocol: 'https', // default is https
   key: 'your_key_sentry',
   project: 'your_name_project',
   config: {} // custom config
@@ -79,6 +79,20 @@ Vue2-sentry is supported in projects with server-side rendering, both in manual 
 If you are using [Nuxt.js](https://nuxtjs.org/), you can opt for this [nuxt-community/sentry-module](https://github.com/nuxt-community/sentry-module).
 
 If you want to use vue2-sentry, just follow the plugins installation tutorial in the Nuxt.js documentation, through [this link](https://nuxtjs.org/guide/plugins/)
+
+## Environments
+vue2-sentry will track in all environments, but if you want to track only in production, you can use the Node environment variables to determine.
+
+**enable:** By default `true` and is optional, equivalent to all environments.
+
+*If you want to track only in production, you can use this example below.*
+
+```javascript
+Vue.use(VueSentry, {
+  enable: process.env.NODE_ENV === 'production',
+  ...
+}
+```
 
 
 ## Contributing
