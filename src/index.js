@@ -8,7 +8,7 @@ export default function VueSentry (Vue, options) {
   }
 
   if (options) {
-    object = {..._options, ...options}
+    options = {..._options, ...options}
   }
 
   if (!options.enable) return
