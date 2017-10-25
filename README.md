@@ -21,10 +21,10 @@ import App from './App.vue'
 import VueSentry from 'vue2-sentry'
 
 Vue.use(VueSentry, {
-  protocol: 'https', // default is https
+  protocol: 'https', // Optional: default is https
   key: 'your_key_sentry',
   project: 'your_name_project',
-  config: {} // custom config
+  config: {} // Optional: custom config
 })
 
 Vue.config.productionTip = false
@@ -89,7 +89,7 @@ vue2-sentry will track in all environments, but if you want to track only in pro
 
 ```javascript
 Vue.use(VueSentry, {
-  enable: process.env.NODE_ENV === 'production',
+  enable: process.env.NODE_ENV === 'production', // Optional: default is true for (all environments)
   ...
 }
 ```
