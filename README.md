@@ -94,6 +94,17 @@ Vue.use(VueSentry, {
 }
 ```
 
+## Available options
+
+Property        | Description    
+--------------- | -------------
+enable          | Enable plugin - `default: true`
+protocol        | Protocol used, this can http or https - `default: https`
+key             | The public and secret keys to authenticate the SDK
+server          | The destination server - `default: sentry.io`
+project         | The project ID which the authenticated user is bound to
+config          | Add extra configuration
+
 
 ## Contributing
 - Check the open issues or open a new issue to start a discussion around your feature idea or the bug you found.

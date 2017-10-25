@@ -1,6 +1,6 @@
 {
   "name": "vue2-sentry",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Plugin Vue.js for error tracking with Sentry",
   "main": "dist/vue2-sentry.cjs.js",
   "scripts": {
