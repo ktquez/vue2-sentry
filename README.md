@@ -21,7 +21,6 @@ import App from './App.vue'
 import VueSentry from 'vue2-sentry'
 
 Vue.use(VueSentry, {
-  protocol: 'https', // Optional: default is https
   key: 'your_key_sentry',
   project: 'your_name_project',
   config: {} // Optional: custom config
