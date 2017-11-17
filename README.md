@@ -21,8 +21,8 @@ import App from './App.vue'
 import VueSentry from 'vue2-sentry'
 
 Vue.use(VueSentry, {
-  key: 'your_key_sentry',
-  project: 'your_name_project',
+  key: 'your_public_key',
+  project: 'your_project_ID',
   config: {} // Optional: custom config
 })
 
@@ -39,10 +39,10 @@ new Vue({
 
 When installing the plugin using `Vue.use` it is possible to define an object by passing the default settings and the keys needed to build the DSN communication and make the tracking work the errors.
 
-**key:** Here you put the public key available in your Sentry account. But also if you need to pass the private key, just enter it this way.
+**key:** Here you put the public key available in your Sentry account. 
 
 ```javascript
-key: 'your_public_key:your_private_key'
+key: 'your_public_key'
 ```
 
 **project:** Each project created in the Sentry panel it generates a project ID, in this property you inform the ID of the project that you want to track.
