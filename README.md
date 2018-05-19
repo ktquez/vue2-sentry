@@ -1,5 +1,7 @@
 # vue2-sentry
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ktquez/vue2-sentry.svg)](https://greenkeeper.io/)
+
 Plugin Vue.js for error tracking with Sentry
 
 ## Sentry
